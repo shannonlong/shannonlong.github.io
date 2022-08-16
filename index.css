@@ -4,7 +4,7 @@
 }
 
 body {
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
   background-color: var(--main-bg-color);
   max-width: 1400px;
   margin: 0 auto 6em auto;
@@ -36,21 +36,24 @@ h1 {
   text-decoration: underline;
 }
 
+.nav > a > img {
+  height: 1.2em;
+}
 
-  .grid {
-    display: inline-flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1em;
-    flex-direction: row;
-  }
+.grid {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+  flex-direction: row;
+}
 
 .grid > div {
   width: 400px;
   height: 400px;
-  background: grey; 
+  background: grey;
 }
 
-.grid > div:hover { 
+.grid > div:hover {
   background: black;
 }
