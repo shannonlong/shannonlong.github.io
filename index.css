@@ -1,0 +1,56 @@
+:root {
+  --main-bg-color: #fff;
+  --text-color: #000;
+}
+
+body {
+  font-family: 'Work Sans', sans-serif;
+  background-color: var(--main-bg-color);
+  max-width: 1400px;
+  margin: 0 auto 6em auto;
+}
+
+h1 {
+  width: 100%;
+  text-align: center;
+  margin: 2em 0 1em;
+  font-size: 4em;
+}
+
+.nav {
+  display: inline-flex;
+  justify-content: center;
+  width: 100%;
+  gap: 3em;
+  align-items: center;
+  margin: 1em 0 2em;
+  font-size: 1.2em;
+}
+
+.nav > a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.nav > a:hover {
+  text-decoration: underline;
+}
+
+
+  .grid {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+    flex-direction: row;
+  }
+
+.grid > div {
+  width: 400px;
+  height: 400px;
+  background: grey; 
+}
+
+.grid > div:hover { 
+  background: black;
+}
