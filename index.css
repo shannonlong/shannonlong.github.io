@@ -17,14 +17,19 @@ h1 {
   font-size: 4em;
 }
 
+.nav-container {
+  display: flex;
+  justify-content: center;
+}
+
 .nav {
   display: inline-flex;
-  justify-content: center;
   width: 100%;
-  gap: 3em;
+  justify-content: space-around;
   align-items: center;
-  margin: 1em 0 2em;
+  margin: 1em 0 1.6em;
   font-size: 1.2em;
+  max-width: 400px;
 }
 
 .nav > a {
@@ -48,12 +53,13 @@ h1 {
   flex-direction: row;
 }
 
-.grid > div {
+.grid > img {
   width: 400px;
   height: 400px;
+  max-width: 100%;
   background: grey;
 }
 
-.grid > div:hover {
+.grid > img:hover {
   background: black;
 }
