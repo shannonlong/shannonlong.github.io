@@ -61,7 +61,7 @@ h1 {
 }
 
 .grid > img {
-  width: 400px;
+  /* width: 400px; */
   height: 400px;
   max-width: 100%;
   background: grey;
