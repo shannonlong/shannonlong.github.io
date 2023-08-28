@@ -72,7 +72,7 @@ h1 a {
   object-fit: cover;i
 }
 
-.grid > img:hover {
+.grid > img:hover, video:hover {
   background: black;
 }
 
