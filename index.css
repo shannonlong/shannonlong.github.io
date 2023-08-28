@@ -4,7 +4,7 @@
 }
 
 body {
-  font-family: "Work Sans", sans-serif;
+  font-family: 'Varela Round', sans-serif;
   background-color: var(--main-bg-color);
   max-width: 1400px;
   margin: 0 auto 6em auto;
