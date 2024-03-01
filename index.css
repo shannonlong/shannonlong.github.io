@@ -4,10 +4,11 @@
 }
 
 body {
-  font-family: 'Varela Round', sans-serif;
+  font-family: "Varela Round", sans-serif;
   background-color: var(--main-bg-color);
-  max-width: 1400px;
-  margin: 0 auto 6em auto;
+  /* max-width: 1400px;
+  margin: 0 auto 6em auto; */
+  margin: 0;
 }
 
 h1 {
@@ -18,13 +19,19 @@ h1 {
   letter-spacing: 0.05em;
 }
 
-h1 a {
+h1 a,
+h2 a {
   text-decoration: none;
   color: black;
 }
 
+h2 {
+  margin: 1em;
+  letter-spacing: 0.05em;
+}
+
 @media only screen and (min-width: 800px) {
-  h1  {
+  h1 {
     font-size: 4em;
   }
 }
@@ -65,19 +72,44 @@ h1 a {
   flex-direction: row;
 }
 
+.grid > a > img,
 .grid > img {
   width: 400px;
   height: 400px;
   max-width: 100%;
-  object-fit: cover;i
+  object-fit: cover;
 }
 
-.grid > img:hover, video:hover {
+.grid > img:hover,
+.grid > video:hover {
   background: black;
+  opacity: 0.5;
+}
+
+.grid a {
+  background: black;
+}
+
+.grid img:hover {
+  opacity: 0.7;
 }
 
 .content {
   max-width: 1000px;
   margin: auto;
   padding: 0 1em;
+}
+
+.content > img {
+  max-width: 100%;
+}
+
+.details {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.details img {
+  max-width: 100%;
 }
