@@ -2,9 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
     <link rel="stylesheet" href="index.css" />
     <title>Shannon Long Art</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,7 +31,85 @@
       </div>
     </div>
 
-    <div class="grid">
+    <div class="content">
+      <ul class="box-container three-cols">
+        <li class="box show" style="transition-delay: 0s;">
+            <div class="inner">
+                <a href="/assets/images/01.jpg" class="glightbox" data-description="This is a description" data-title="This is a title">
+                    <img src="/assets/images/01-tn.jpg" alt="image">
+                </a>
+            </div>
+        </li>
+        <li class="box show" style="transition-delay: 0.15s;">
+            <div class="inner">
+                <a href="/assets/images/02.jpg" class="glightbox">
+                    <img src="/assets/images/02-tn.jpg" alt="image">
+                </a>
+            </div>
+        </li>
+        <li class="box show" style="transition-delay: 0.15s;">
+            <div class="inner">
+                <a href="/assets/images/03.jpg" class="glightbox">
+                    <img src="/assets/images/03-tn.jpg" alt="image">
+                </a>
+            </div>
+        </li>
+        <li class="box show" style="transition-delay: 0.15s;">
+          <div class="inner">
+              <a href="/assets/images/04.jpg" class="glightbox">
+                  <img src="/assets/images/04.jpg" alt="image">
+              </a>
+          </div>
+        </li>
+        <li class="box show" style="transition-delay: 0.15s;">
+          <div class="inner">
+              <a href="/assets/images/06.jpg" class="glightbox">
+                  <img src="/assets/images/06.jpg" alt="image">
+              </a>
+          </div>
+        </li>
+        <li class="box show" style="transition-delay: 0.15s;">
+          <div class="inner">
+              <a href="/assets/images/07.jpg" class="glightbox">
+                  <img src="/assets/images/07.jpg" alt="image">
+              </a>
+          </div>
+        </li>
+        <li class="box show" style="transition-delay: 0.15s;">
+          <div class="inner">
+              <a href="/assets/images/08.jpg" class="glightbox">
+                  <img src="/assets/images/08.jpg" alt="image">
+              </a>
+          </div>
+        </li>
+        <li class="box show" style="transition-delay: 0.15s;">
+          <div class="inner">
+              <a href="/assets/images/09.jpg" class="glightbox">
+                  <img src="/assets/images/09.jpg" alt="image">
+              </a>
+          </div>
+        </li>
+        <li class="box show" style="transition-delay: 0.15s;">
+          <div class="inner">
+              <a href="/assets/images/10.jpg" class="glightbox">
+                  <img src="/assets/images/10.jpg" alt="image">
+              </a>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <script type="text/javascript">
+      const lightbox = GLightbox({
+          touchNavigation: true,
+          loop: true,
+      });
+
+      const myGallery = GLightbox();
+      // myGallery.open();
+    </script>
+
+    <!-- <div class="grid">
       <a href=01.html><img src="/assets/images/01-tn.jpg" /></a>
       <a href=02.html><img src="/assets/images/02-tn.jpg" /></a>
       <a href=03.html><img src="/assets/images/03-tn.jpg" /></a>
@@ -40,10 +121,6 @@
       <a href=09.html><img src="/assets/images/09-tn.jpg" /></a>
       <a href=10.html><img src="/assets/images/10.jpg" /></a>
       <a href=11.html><img src="/assets/images/11.jpg" /></a>
-
-      <!-- <video width="400" height="400" autoplay muted>
-        <source src="/assets/images/02-tn.webm" type="video/webm" />
-      </video> -->
-    </div>
+    </div> -->
   </body>
 </html>

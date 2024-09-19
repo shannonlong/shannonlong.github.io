@@ -1,0 +1,11 @@
+{
+  "name": "shannonlong",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/shannonlong/shannonlong.github.io.git",
+  "author": "shannon.co.long@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "glightbox": "^3.3.0",
+  }
+}
