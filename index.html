@@ -16,9 +16,9 @@
       <link rel="icon" href="favicon.ico" type="image/x-icon" />
     </head>
   <body>
-    <div class="header-sm">
+    <div class="mobile-menu sm">
       <img src="/assets/logo.jpg" />
-      <button>
+      <button class="menu-toggle">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10" stroke="#000" stroke-width=".6" fill="rgba(0,0,0,0)" stroke-linecap="round" style="cursor: pointer">
           <path d="M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7">
             <animate dur="0.2s" attributeName="d" values="M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7;M3,3L5,5L7,3M5,5L5,5M3,7L5,5L7,7" fill="freeze" begin="start.begin" />
@@ -35,21 +35,21 @@
       </button>
     </div>
 
-    <div class="header-lg">
+    <div class="lg">
       <header>
         <img src="logo.png"/>
         <h1><a href="/">Shannon Long</a></h1>
         <h3>Illustrator + Animator + Rascal</h3>
       </header>
+    </div>
 
-      <div class="nav-container">
-        <div class="nav">
-          <a href="/about.html">About</a>
-          <a href=//shannonlongart.bigcartel.com>Store</a>
-          <a href=//www.instagram.com/shannon.long.art>
-            <img src=assets/icons/insta.png />
-          </a>
-        </div>
+    <div class="nav-container lg">
+      <div class="nav">
+        <a href="/about.html">About</a>
+        <a href=//shannonlongart.bigcartel.com>Store</a>
+        <a href=//www.instagram.com/shannon.long.art>
+          <img src=assets/icons/insta.png />
+        </a>
       </div>
     </div>
 
@@ -172,6 +172,15 @@
 
       const myGallery = GLightbox();
       // myGallery.open();
+    </script>
+
+    <script>
+      // mobile menu logic
+      let menuVisible = false
+      document.querySelector(".menu-toggle").onclick = function () {
+        menuVisible = !menuVisible;
+        document.querySelector(".nav-container").style.display = menuVisible ? "block" : "none";
+      }
     </script>
   </body>
 </html>
