@@ -16,19 +16,40 @@
       <link rel="icon" href="favicon.ico" type="image/x-icon" />
     </head>
   <body>
-    <header>
-      <img src="logo.png"/>
-      <h1><a href="/">Shannon Long</a></h1>
-      <h3>Illustrator + Animator + Rascal</h3>
-    </header>
+    <div class="header-sm">
+      <img src="/assets/logo.jpg" />
+      <button>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10" stroke="#000" stroke-width=".6" fill="rgba(0,0,0,0)" stroke-linecap="round" style="cursor: pointer">
+          <path d="M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7">
+            <animate dur="0.2s" attributeName="d" values="M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7;M3,3L5,5L7,3M5,5L5,5M3,7L5,5L7,7" fill="freeze" begin="start.begin" />
+            <animate dur="0.2s" attributeName="d" values="M3,3L5,5L7,3M5,5L5,5M3,7L5,5L7,7;M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7" fill="freeze" begin="reverse.begin" />
+          </path>
+          <rect width="10" height="10" stroke="none">
+            <animate dur="2s" id="reverse" attributeName="width" begin="click" />
+          </rect>
+          <rect width="10" height="10" stroke="none">
+            <animate dur="0.001s" id="start" attributeName="width" values="10;0" fill="freeze" begin="click" />
+            <animate dur="0.001s" attributeName="width" values="0;10" fill="freeze" begin="reverse.begin" />
+          </rect>
+        </svg>
+      </button>
+    </div>
 
-    <div class="nav-container">
-      <div class="nav">
-        <a href="/about.html">About</a>
-        <a href=//shannonlongart.bigcartel.com>Store</a>
-        <a href=//www.instagram.com/shannon.long.art>
-          <img src=assets/icons/insta.png />
-        </a>
+    <div class="header-lg">
+      <header>
+        <img src="logo.png"/>
+        <h1><a href="/">Shannon Long</a></h1>
+        <h3>Illustrator + Animator + Rascal</h3>
+      </header>
+
+      <div class="nav-container">
+        <div class="nav">
+          <a href="/about.html">About</a>
+          <a href=//shannonlongart.bigcartel.com>Store</a>
+          <a href=//www.instagram.com/shannon.long.art>
+            <img src=assets/icons/insta.png />
+          </a>
+        </div>
       </div>
     </div>
 
@@ -37,7 +58,7 @@
         <li class="box show" style="transition-delay: 0s;">
             <div class="inner">
                 <a href="/assets/images/01.jpg" class="glightbox" data-description="This is a description" data-title="This is a title">
-                    <img src="/assets/images/01-tn.jpg" alt="image">
+                  <img src="/assets/images/01-tn.jpg" alt="image">
                 </a>
             </div>
         </li>

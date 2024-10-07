@@ -6,9 +6,28 @@
 body {
   font-family: "Varela Round", sans-serif;
   background-color: var(--main-bg-color);
-  /* max-width: 1400px;
-  margin: 0 auto 6em auto; */
   margin: 0;
+}
+
+.header-sm, .header-lg {
+  display: none
+}
+
+.header-sm {
+  justify-content: space-between;
+  padding: 1em;
+  border-bottom: 2px solid lightgray;
+}
+
+.header-sm img {
+  width: 5em;
+}
+
+.header-sm button {
+  display: block;
+  width: 4.5em;
+  border: none;
+  background: none;
 }
 
 header {
@@ -190,6 +209,13 @@ h3 {
   }
 }
 
+@media (max-width: 600px) {
+  .header-sm { display: flex; }
+}
+
+@media (min-width: 600px) {
+  .header-lg { display: initial; }
+}
 
 @media (min-width: 576px) {
   .three-cols .box {
