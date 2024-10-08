@@ -2,51 +2,97 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="index.css" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
     <title>Shannon Long Art</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
-  </head>
-  <body>
-    <h2><a href="/">Shannon Long</a></h2>
 
-    <div class="nav-container">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+
+    <link rel="stylesheet" href="index.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+      <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    </head>
+  <body>
+    <div class="mobile-menu sm">
+      <img src="/assets/logo.jpg" />
+      <button class="menu-toggle">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10" stroke="#000" stroke-width=".6" fill="rgba(0,0,0,0)" stroke-linecap="round" style="cursor: pointer">
+          <path d="M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7">
+            <animate dur="0.2s" attributeName="d" values="M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7;M3,3L5,5L7,3M5,5L5,5M3,7L5,5L7,7" fill="freeze" begin="start.begin" />
+            <animate dur="0.2s" attributeName="d" values="M3,3L5,5L7,3M5,5L5,5M3,7L5,5L7,7;M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7" fill="freeze" begin="reverse.begin" />
+          </path>
+          <rect width="10" height="10" stroke="none">
+            <animate dur="2s" id="reverse" attributeName="width" begin="click" />
+          </rect>
+          <rect width="10" height="10" stroke="none">
+            <animate dur="0.001s" id="start" attributeName="width" values="10;0" fill="freeze" begin="click" />
+            <animate dur="0.001s" attributeName="width" values="0;10" fill="freeze" begin="reverse.begin" />
+          </rect>
+        </svg>
+      </button>
+    </div>
+
+    <div class="lg">
+      <header>
+        <img src="logo.png"/>
+        <h1><a href="/">Shannon Long</a></h1>
+        <h3>Illustrator + Animator + Rascal</h3>
+      </header>
+    </div>
+
+    <div class="nav-container lg">
       <div class="nav">
         <a href="/about.html">About</a>
-        <a href=//shannonlong.bigcartel.com>Store</a>
+        <a href=//shannonlongart.bigcartel.com>Store</a>
         <a href=//www.instagram.com/shannon.long.art>
           <img src=assets/icons/insta.png />
         </a>
       </div>
     </div>
 
-
     <div class="content">
-      <img src="/assets/images/about.jpg" />
-
-      <p>Hi!,</p>
-      <p>I’m Shannon Long.</p>
-      <p>I’m an illustrator/animator from Halifax, Nova Scotia.</p>
-      <p>
-        Born and raised in NS, I found my inspiration for creation in cartoons,
-        comics, anime, video games, graffiti, roller skate culture and all
-        things cute and colourful.
-      </p>
-      <p>
-        I currently work as a Digital Game Artist, focusing on graphics and
-        animations for casual gaming. I also work professionally as an
-        illustrator in traditional mediums. 
-      </p>
-      <p>
-        My current favourite works being
-        acrylic paint on found objects, to give the abandoned new purpose
-      </p>
+      <div class="about">
+        <div class="about-photo">
+          <img src="/assets/about.jpg" />
+        </div>
+        
+        <div class="about-content">
+          <p>
+            Shannon is a playful artist who creates colorful and quirky pieces inspired by the  worlds of nerd, pop, and queer culture. 
+          </p>
+          <p>
+            Her vibrant artwork celebrates the joy of loving who and what you love unapologetically, blending inclusivity and individuality with fun cartoony imagery.  
+          </p>
+          <p>
+            Based in Halifax, Nova Scotia, she uses her art to foster connections within the community, spark smiles and brighten days.
+          </p>
+          <div class="about-contact">
+            Contact: <a href="mailto:shannon.co.long@gmail.com">shannon.co.long@gmail.com</a>.
+          </div>
+        </div>
+      </div>
     </div>
+
+    <script type="text/javascript">
+      const lightbox = GLightbox({
+          touchNavigation: true,
+          loop: true,
+      });
+
+      const myGallery = GLightbox();
+      // myGallery.open();
+    </script>
+
+    <script>
+      // mobile menu logic
+      let menuVisible = false
+      document.querySelector(".menu-toggle").onclick = function () {
+        menuVisible = !menuVisible;
+        document.querySelector(".nav-container").style.display = menuVisible ? "block" : "none";
+      }
+    </script>
   </body>
 </html>
