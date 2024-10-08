@@ -47,9 +47,9 @@ header {
   max-width: 1400px;
   margin: 0 auto;
   padding: 2em;
-  background: url(/assets/header-bg.png);
+  background: url(/assets/header-bg.jpg);
   background-repeat: repeat-x;
-  background-size: 140px;
+  background-size: 28px;
   gap: 2em;
 }
 
