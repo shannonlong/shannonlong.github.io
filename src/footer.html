@@ -1,0 +1,30 @@
+    </div>
+
+    <footer>
+      <img src="logo.png"/>
+      <p>shannon.co.long@gmail.com</p>
+      <a class='social' href=//www.instagram.com/shannon.long.art>
+        <img src=assets/icons/insta.png />shannon.long.art
+      </a>
+    </footer>
+
+    <script type="text/javascript">
+      const lightbox = GLightbox({
+          touchNavigation: true,
+          loop: true,
+      });
+
+      const myGallery = GLightbox();
+      // myGallery.open();
+    </script>
+
+    <script>
+      // mobile menu logic
+      let menuVisible = false
+      document.querySelector(".menu-toggle").onclick = function () {
+        menuVisible = !menuVisible;
+        document.querySelector(".nav-container").style.display = menuVisible ? "block" : "none";
+      }
+    </script>
+  </body>
+</html>

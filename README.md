@@ -3,6 +3,9 @@ Portfolio site (https://shannonlong.art/) hosted by github pages and namecheap f
 ## Host Locally
 `python3 -m http.server`
 
+## How to build site
+The sites content is seperated into parts which reside inside `/src/`. To edit the site make changes to the files under `/src`. Then build the final files by running `./build.sh` from the project root directory.
+
 ## How to change images
 All the site images are store under `/assets/images`. To change them you need to convert the images to JPG and generate a thumbnail version.
 
