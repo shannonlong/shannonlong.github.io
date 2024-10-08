@@ -29,7 +29,7 @@ a.social {
 }
 
 .mobile-menu img {
-  width: 4em;
+  width: 8em;
 }
 
 .mobile-menu button {
@@ -42,13 +42,22 @@ a.social {
 header {
   display: flex;
   align-items: center;
-  flex-direction: column;
-  margin-top: 2em;
+  flex-direction: row;
+  justify-content: center;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2em;
+  background: url(/assets/header-bg.png);
+  background-repeat: repeat-x;
+  background-size: 140px;
+  gap: 2em;
 }
 
-header img {
-  max-height: 300px;
-  max-width: 60%;
+header .logo { 
+  max-width: 600px;
+}
+header .character { 
+  max-width: 200px;
 }
 
 footer {
@@ -194,7 +203,7 @@ h3 {
 }
 
 .about img {
-  max-width: 40em;
+  max-width: 60em;
   width: 100%;
   padding-right: 1em;
 }
