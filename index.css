@@ -13,6 +13,10 @@ a {
   color: #111;
 }
 
+.nav > a.current {
+  text-decoration: underline;
+}
+
 a.social {
   display: flex;
 }

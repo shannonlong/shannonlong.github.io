@@ -103,6 +103,14 @@
         menuVisible = !menuVisible;
         document.querySelector(".nav-container").style.display = menuVisible ? "block" : "none";
       }
+
+      // current link for nav links
+      let currentPage = location.href.split("/").pop(); 
+      document.querySelectorAll(".nav > a").forEach((link) => {
+        if(!link.href.startsWith(location.href)) return // skip external navigation
+        if(link.href.split("/").pop() == currentPage)
+          link.className = "current";
+      });
     </script>
   </body>
 </html>
